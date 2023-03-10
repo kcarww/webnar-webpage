@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+body {
+    display: flex;
+    flex-wrap:  wrap;
+}
+
+#about-container {
+    flex: 1.4;
+    padding: 32px 64px;
+}
+
+#brand {
+    display: flex;
+    align-items: center;
+    font-size: 12.8px;
+    margin-bottom: 16px;
+}
+
+#brand img {
+    height: 50px;
+    margin-right: 9.6px;
+}
+
+#exclusivo {
+    text-transform: uppercase;
+    color: #0075ff;
+    font-weight: bold;
+    font-size: 14.4px;
+    margin-bottom: 16px;
+}
+
+#about-container h2 {
+    font-size: 38.4px;
+    max-width: 500px;
+    margin-bottom: 16px;
+}
+
+#date {
+    text-transform: uppercase;
+    color: #aaa;
+    margin-bottom: 16px;
+}
+
+#descricao {
+    max-width: 500px;
+    margin-bottom: 16px;
+    line-height: 22.4px;
+}
+
+#about-container h4 {
+    font-size: 22.4px;
+    margin-bottom: 16px;
+}
+
+#user-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.user-card {
+    border: 2px solid #ccc;
+    padding: 16px;
+    width: 180px;
+    text-align: center;
+}
+
+.user-card img {
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+
+.user-card .user-name {
+    font-weight: bold;
+    margin-bottom: 9.6px;
+}
+
+.user-card .user-role {
+    color: #aaa;
+    font-size: 14.4px;
+}
+
+
+/* Formulário */ 
+#form-container {
+    flex: 1;
+    background-image: url("../img/pattern.png");
+    background-size: cover;
+    color: #fff;
+}
+
+#form-inner {
+    margin: 48px;
+    padding: 48px;
+    border: 2px solid #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form-inner h3 {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+#form-inner p {
+    margin-bottom: 16px;
+}
+
+#register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 32px;
+}
+
+#name-container {
+    display: flex;
+    gap: 8px;
+}
+
+#register-form input {
+    padding: 12.8px 9.6px;
+    border: none;
+    border-radius: 3px;
+}
+
+#email {
+    min-width: 100%;
+}
+
+#register-form input[type='submit'] {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 17.6px;
+    font-weight: bold;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#register-form input[type='submit']:hover {
+    background-color: #fff;
+    color: #0075ff;
+}
+
+#benefits {
+    text-align: left;
+    align-self: start;
+}
+
+#benefits h4 {
+    font-size: 22.4px;
+    margin-bottom: 16px;
+}
+
+#benefits ul {
+    list-style-position: inside;
+}
+
+#benefits li {
+    margin-bottom: 8px;
+}
+
+/* responsivo */
+@media (max-width: 450px) {
+    body {
+        flex-direction: column;
+    }
+
+    #about-container {
+        padding: 32px;
+        padding-bottom: 0;
+    }
+
+    #about-container h2 {
+        font-size: 48px;
+    }
+
+    #exclusive, #date {
+        font-size: 22.4px;
+    }
+
+    #description {
+        font-size: 25.6px;
+        line-height: 35.2px;
+    }
+
+    #about-container h4 {
+        font-size: 32px;
+    }
+
+    #user-container {
+        flex-direction: column;
+    }
+
+    .user-card {
+        width: 100%;
+        padding: 32px;
+    }
+
+    .user-card img {
+        width: 180px;
+    }
+
+    .user-card .user-name {
+        font-size: 25.6px;
+    }
+
+    .user-card .user-role {
+        font-size: 22.4px;
+    }
+    
+    #form-inner {
+        margin: 32px;
+        padding: 32px;
+    }
+
+    #register-form, #name-container {
+        gap: 16px;
+    }
+
+}
